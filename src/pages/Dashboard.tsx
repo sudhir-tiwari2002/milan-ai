@@ -7,7 +7,7 @@ import { LogOut, BarChart3, Users, Zap, TrendingUp } from 'lucide-react';
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  // const { logout } = useLogout();
+  const { logout } = useLogout();
   const user = getUser();
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Dashboard = () => {
             <span className="text-sm text-muted-foreground">
               {user?.email || 'User'}
             </span>
-            <Button variant="outline" size="sm" onClick={()=>{}}>
+            <Button variant="outline" size="sm" onClick={logout}>
               <LogOut className="h-4 w-4 mr-2" />
               Logout
             </Button>
