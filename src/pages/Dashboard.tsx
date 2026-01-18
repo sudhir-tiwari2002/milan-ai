@@ -10,11 +10,11 @@ const Dashboard = () => {
   const { logout } = useLogout();
   const user = getUser();
 
-  useEffect(() => {
-    if (!isAuthenticated()) {
-      navigate('/auth');
-    }
-  }, [navigate]);
+  // useEffect(() => {
+  //   if (!isAuthenticated()) {
+  //     navigate('/auth');
+  //   }
+  // }, [navigate]);
 
   const stats = [
     { title: 'Campaigns', value: '12', icon: Zap, change: '+2 this week' },
