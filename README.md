@@ -24,7 +24,20 @@ Welcome to the **Marketing App**! This project is a modern web application desig
 ---
 
 ## File Structure
-src/ ├── components/ │ └── ui/ # Reusable UI components ├── pages/ │ ├── Login.tsx # Login page │ ├── Signup.tsx # Signup page │ ├── NotFound.tsx # 404 page ├── hooks/ │ └── useAuth.ts # Custom authentication hook ├── lib/ │ └── api-client.ts # API client for backend communication ├── App.tsx # Main app component ├── main.tsx # Entry point └── index.css # Tailwind CSS styles
+src/
+├── components/
+│   └── ui/          # Reusable UI components
+├── pages/
+│   ├── Login.tsx    # Login page
+│   ├── Signup.tsx   # Signup page
+│   ├── NotFound.tsx # 404 page
+├── hooks/
+│   └── useAuth.ts   # Custom authentication hook
+├── lib/
+│   └── api-client.ts # API client for backend communication
+├── App.tsx          # Main app component
+├── main.tsx         # Entry point
+└── index.css        # Tailwind CSS styles
 
 
 ---
