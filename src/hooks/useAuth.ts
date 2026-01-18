@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
-import { apiClient, LoginRequest, SignupRequest, AuthResponse } from '@/lib/api-client';
+import { AuthResponse , LoginData ,loginUser,signupBrand,SignupData } from '@/lib/api'; // Remove apiClient if not exported
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
@@ -7,10 +7,10 @@ export const useLogin = () => {
   const navigate = useNavigate();
 
   return useMutation({
-    mutationFn: (data: LoginRequest) => apiClient.login(data),
+    mutationFn: (data: LoginData) => loginUser(data),
     onSuccess: (response: AuthResponse) => {
-      if (response.token) {
-        localStorage.setItem('auth_token', response.token);
+      if (response.access_token) {
+        localStorage.setItem('auth_token', response.access_token);
         localStorage.setItem('user', JSON.stringify(response.user));
       }
       toast.success('Welcome back!');
@@ -26,10 +26,10 @@ export const useSignup = () => {
   const navigate = useNavigate();
 
   return useMutation({
-    mutationFn: (data: SignupRequest) => apiClient.signup(data),
+    mutationFn: (data: SignupData) => signupBrand(data),
     onSuccess: (response: AuthResponse) => {
-      if (response.token) {
-        localStorage.setItem('auth_token', response.token);
+      if (response.access_token) {
+        localStorage.setItem('auth_token', response.access_token);
         localStorage.setItem('user', JSON.stringify(response.user));
       }
       toast.success('Account created successfully!');
