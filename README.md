@@ -41,19 +41,19 @@ src/ ├── components/ │ └── ui/ # Reusable UI components ├── 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/marketing-app.git
-   cd marketing-app
+   cd marketing-app```
 
 2. Install dependencies:
   ```bash 
-  npm install
+  npm install ```
 
 3. Start the development server:
   ```bash
-  npm run dev
+  npm run dev```
 
 4. Open the app in your browser:
   ```bash
-  http://localhost:5173
+  http://localhost:5173```
 
 ### Scripts
 npm run dev: Start the development server.
