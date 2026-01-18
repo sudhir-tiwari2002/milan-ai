@@ -44,13 +44,16 @@ src/ ├── components/ │ └── ui/ # Reusable UI components ├── 
    cd marketing-app
 
 2. Install dependencies:
-npm install
+  ```bash 
+  npm install
 
 3. Start the development server:
-npm run dev
+  ```bash
+  npm run dev
 
 4. Open the app in your browser:
-http://localhost:5173
+  ```bash
+  http://localhost:5173
 
 ### Scripts
 npm run dev: Start the development server.
