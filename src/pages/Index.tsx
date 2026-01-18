@@ -227,7 +227,7 @@ const Index = () => {
             <span className="text-sm font-medium text-foreground">Milan AI</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2024 Milan AI. All rights reserved.
+            © 2026 Milan AI. All rights reserved.
           </p>
         </div>
       </footer>
